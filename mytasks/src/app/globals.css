@@ -36,7 +36,7 @@
   overflow: hidden;
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-template-columns: 2rem 26rem auto 22rem 2rem;
+  grid-template-columns: 2rem 26rem auto 33rem 2rem;
   grid-template-rows: repeat(3, 1fr);
 
 }

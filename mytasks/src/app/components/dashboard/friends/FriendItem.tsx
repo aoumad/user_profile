@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./friends.module.css";
+import MoreIcon from "./more_icon";
 
 interface FriendItemProps {
     name: string;
@@ -8,15 +10,19 @@ interface FriendItemProps {
 
 const FriendItem: React.FC<FriendItemProps> = (props) => {
     return (
-        <div className="FriendItem">
-            <div className="friend-container">
-                <div className="friend-image">
+        // <div className={styles.FriendItem}>
+            <div className={styles['friendItem-container']}>
+                <div className={styles['friend-image']}>
                     <img src={props.picture} alt="Profile" className="friend-image" />
                 </div>
-                <div className="friend-name">
-                    <span className="friend-name">{props.name}</span>
+                <div className={styles['friend-name']}>
+                    <span className={styles['friend-name']}>{props.name}</span>
+                    {/* add more icon here */}
                 </div>
+                <MoreIcon />
             </div>
-        </div>
+        // </div>
     );
 };
+
+export default FriendItem;
