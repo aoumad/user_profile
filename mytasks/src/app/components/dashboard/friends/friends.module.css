@@ -84,3 +84,9 @@ div span.friends-title
     background-position: 50% 50%;
     cursor: pointer;
 }
+
+.MoreIcon >svg
+{
+    width: 30px;
+    height: 30px;
+}

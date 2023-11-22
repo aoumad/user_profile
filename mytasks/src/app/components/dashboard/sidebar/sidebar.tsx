@@ -12,7 +12,6 @@ const Sidebar: React.FC = () => {
       <div className={styles['sidebar-container']}>
         <div className={styles['profile-header']}>
           <div className={styles['profile-image']}>
-            {/* Use picture.src instead of picture directly */}
             <img src={picture.src} alt="Profile" className={styles['profile-image']} />
             <span className={styles.username}>Abderazzak</span>
             <span className={styles['user-id']}>aoumad</span>

@@ -6,7 +6,7 @@ import Skins from '../components/dashboard/skins/skins'
 import Friends from '../components/dashboard/friends/friends'
 import aoumad from '../imgs/aoumad.jpeg'
 import Achievement from '../components/dashboard/achievements/achievement'
-
+import Statistics from '../components/dashboard/Statistics/Statistics'
 export default async function RootLayout({
   children,
 }: {
@@ -33,6 +33,7 @@ export default async function RootLayout({
           <Skins/>
           <Friends friends={friendsList} />
           <Achievement />
+          <Statistics />
       </div>
     </div>
         {children}

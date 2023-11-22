@@ -3,7 +3,7 @@ import styles from './achievement.module.css'
 import achievementImage from './../../../imgs/achievement_1.svg'
 
 const achievement: React.FC = () => {
-  return (
+  return ( 
     <div className={styles.achievement}>
         <div className={styles['achievement-container']}>
             <span className={styles['achievement-title']}>Achievements</span>
