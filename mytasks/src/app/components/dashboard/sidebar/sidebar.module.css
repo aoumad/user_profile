@@ -23,7 +23,7 @@
     padding-top: 4rem;
     transition: all 300ms ease;
   }
-  
+
   div span.username {
     gap: 10px;
     font-family: "Inter", sans-serif;
@@ -64,7 +64,7 @@
   }
   
   .profile-header {
-    background-color: #19549e;
+    background: rgba(5, 10, 39, 0.55);
     padding-top: 20px; /* Adjust padding as needed */
     padding-bottom: 0px;
     border-radius: 15px;
@@ -81,15 +81,15 @@
   }
   
   .sidebar-container {
-    background-color: #07284f;
-    z-index: 2; /* Raise the z-index value */
-    padding-bottom: 800px;
+    background: linear-gradient(169.75deg, rgba(255, 255, 255, 0) -50.22%, #040924 -9.3%, #111534 -1.17%, rgba(68, 71, 111, 0.957018) 83.26%, rgba(154, 155, 211, 0.9) 136.85%);
+    /* z-index: 2; Raise the z-index value */
+    padding-bottom: 46rem;
   }
   
   .wallet {
     color: aliceblue;
     position: absolute;
-    bottom: 720px;
+    bottom: 630px;
     margin: 30px;
     gap: 0.5rem;
     padding: 10px;
@@ -106,4 +106,125 @@
   .wallet span {
     font-size: 20px;
     font-weight: bold;
+}
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  .Sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .profile-header {
+    width: 60%;
+    margin-top: 30px;
+    padding-bottom: 8.215rem;
+  }
+
+  .wallet {
+    bottom: 20rem ;
+  }
+
+  .profile-image {
+    height: 160px;
+    width: 160px;
+    margin: 20px 0;
+  }
+
+  div span.username {
+    font-size: 20px;
+    padding-top: 0.5rem;
+  }
+
+  div span.user-id {
+    font-size: 14px;
+    padding-top: 0.5rem;
+  }
+
+  .settings {
+    bottom: 200px;
+  }
+
+  .settings span {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .settings svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sidebar-container {
+    padding-bottom: 480px;
+  }
+
+  .wallet svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wallet span {
+    font-size: 16px;
+  }
+}
+
+/* Small screen size: max-width 767px */
+@media (max-width: 1300px) {
+  .Sidebar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .profile-header {
+    width: 50%;
+    margin-top: 45px;
+    padding-bottom: 6.215rem;
+  }
+
+  .wallet {
+    bottom: 240px;
+  }
+
+  .profile-image {
+    height: 120px;
+    width: 120px;
+    margin: 15px 0;
+  }
+
+  div span.username {
+    font-size: 20px;
+    padding-top: 0.3rem;
+  }
+
+  div span.user-id {
+    font-size: 13px;
+    padding-top: 0.3rem;
+  }
+
+  .settings {
+    bottom: 130px;
+  }
+
+  .settings span {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  .settings svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sidebar-container {
+    padding-bottom: 400px;
+  }
+
+  .wallet svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .wallet span {
+    font-size: 14px;
+  }
 }

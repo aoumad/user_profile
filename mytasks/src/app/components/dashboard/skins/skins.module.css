@@ -78,3 +78,56 @@ div span.skins-title
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
+
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+    .Skins
+    {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .skins-container
+    {
+        width: 80%;
+    }
+
+    .Skins-rectangle
+    {
+        width: 200px;
+        height: 250px;
+    }
+
+    .Skins-stick {
+        width: 200px;
+        height: 20px;
+        right: 10%;
+        bottom: 50%;
+    }
+
+    div span.skins-title
+    {
+        font-size: 25px;
+    }
+
+    .Skins-circle
+    {
+        width: 30px;
+        height: 30px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .Skins
+    {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    
+}
