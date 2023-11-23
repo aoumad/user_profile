@@ -14,29 +14,28 @@
 .friends-container
 {
     background: linear-gradient(169.75deg, rgba(255, 255, 255, 0) -50.22%, #040924 -9.3%, #111534 -1.17%, rgba(68, 71, 111, 0.957018) 83.26%, rgba(154, 155, 211, 0.9) 136.85%);
+    overflow: auto;
     position: absolute;
     justify-content: space-between;
     box-sizing: border-box;
     height: 90%;
-    width: 96%;
+    width: 85%;
     margin: 5px;
     border: 1px solid rgba(154, 155, 211, 0.2);
     border-radius: 10px;
 }
 
-div span.friends-title
-{
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: aliceblue;
-  align-self: flex-start;
-    margin-left: 40px;
+div span.friends-title {
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+    /* margin-top: 4rem; */
+    display: flex;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-weight: 800;
+    font-size: 35px;
+    font-weight: bold;
 }
-
 .friendItem-container
 {
     background: rgba(154, 155, 211, 0.2);
@@ -89,4 +88,60 @@ div span.friends-title
 {
     width: 30px;
     height: 30px;
+}
+
+.NotifIcon
+{
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+.NotifIcon >svg
+{
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 1300px) and (max-width: 1900px)
+{
+    .friends
+    {
+        padding-left: 4rem;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .friends-container
+    {
+        width: 83%;
+        height: 83%;
+    }
+
+    .friendItem-container
+    {
+        width: 92%;
+        margin: 15px 50px;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .friends
+    {
+        padding-left: 4rem;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
 }
