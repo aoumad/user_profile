@@ -1,6 +1,9 @@
 .StatusBar
 {
   background: rgba(154, 155, 211, 0.1);
+  position: absolute;
+  top: 11vh;
+  left: 28vw;
   height: 3.5rem;
   width: 23rem;
   font-family: "Poppins", sans-serif;
@@ -8,8 +11,6 @@
   font-weight: 400;
   position: relative;
   border-radius: 0.5rem;
-  margin: 8rem 50rem;
-  /* padding: 8rem 50rem; */
 }
 
 

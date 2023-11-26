@@ -47,19 +47,18 @@
   .wallet {
     color: aliceblue;
     position: absolute;
-    top: 15rem;
-    right: 35rem;
-    margin: 2rem;
+    top: 21vh;
+    right: 23vw;
     gap: 0.5rem;
-    padding: 0.625px;
+    /* padding: 0.625px; */
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .wallet svg {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
   
   .wallet span {

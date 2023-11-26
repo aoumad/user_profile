@@ -1,8 +1,8 @@
 .SkinComp {
-    transition: width 1s ease-in-out cubic-bezier(0, 1.22, 0.66, 1.39),
-      border-radius 1s ease-in-out,
-      background 1s ease-in-out,
-      box-shadow 1s ease-in-out;
+    transition: width 2s ease-in-out cubic-bezier(0, 1.22, 0.66, 1.39),
+      border-radius 2s ease-in-out,
+      background 2s ease-in-out,
+      box-shadow 2s ease-in-out;
     transition-property: all;
     border: none;
     cursor: pointer;
@@ -23,9 +23,14 @@
   }
   
   .SkinComp:hover {
-    width: 13%;
+    width: 19%;
     height: 55vh;
-    transform: scaleX(1.2); /* Scale the component horizontally to achieve the desired width change from both sides */
+    transform: scaleX(1.2);
+    transition: width 2s ease-in-out cubic-bezier(0, 1.22, 0.66, 1.39),
+    border-radius 2s ease-in-out,
+    background 2s ease-in-out,
+    box-shadow 2s ease-in-out;
+    transition-property: all;
   }
   
   .skin-name {
