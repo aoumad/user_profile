@@ -53,15 +53,15 @@ const StatusBar = (props: StatusBarProps) => {
 
 export default StatusBar;
 
-0
+
 {/* <ul className={styles['sidebar']}>
-    <li onClick={() => setTable(true)} className={styles.navli}>
-        <a href="#" className={styles['nav-a']}>Table</a>
-    </li>
-    <li onClick={() => setPaddle(true)} className={styles.navli}>
-        <a href="#" className={styles['nav-a']}>Paddle</a>
-    </li>
-    <li onClick={() => setBall(true)} className={styles.navli}>
-        <a href="#" className={styles['nav-a']}>Ball</a>
-    </li>
+<li onClick={() => setTable(true)} className={styles.navli}>
+<a href="#" className={styles['nav-a']}>Table</a>
+</li>
+<li onClick={() => setPaddle(true)} className={styles.navli}>
+<a href="#" className={styles['nav-a']}>Paddle</a>
+</li>
+<li onClick={() => setBall(true)} className={styles.navli}>
+<a href="#" className={styles['nav-a']}>Ball</a>
+</li>
 </ul> */}
