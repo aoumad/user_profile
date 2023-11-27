@@ -1,7 +1,7 @@
 import React from 'react';
 import FriendItem from './FriendItem';
+import NotifIcon from '../Notification/Notification';
 import styles from './friends.module.css';
-import NotifIcon from './notif_icon';
 interface Friend {
   id: string;
     name: string;
@@ -18,6 +18,7 @@ const Friends: React.FC<FriendsProps> = ({ friends }) => {
         <div className={styles['friends-container']}>
             <span className={styles['friends-title']}>Friends</span>
             <NotifIcon />
+
             <ul>
                 {friends.map((friend) => (
                 <FriendItem

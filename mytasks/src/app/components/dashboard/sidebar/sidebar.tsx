@@ -16,15 +16,15 @@ const Sidebar: React.FC = () => {
             <img src={picture.src} alt="Profile" className={styles['profile-image']} />
             <span className={styles.username}>Abderazzak</span>
             <span className={styles['user-id']}>aoumad</span>
-            <div className={styles.wallet}>
+          </div>
+        </div>
+        <div className={styles.wallet}>
               <FaGoogleWallet />
               <span className={styles['wallet-value']}>215</span>
-            </div>
+        </div>
             <div className={styles['settings-container']}>
             <Settings />
             </div>
-          </div>
-        </div>
       </div>
     </div>
   );

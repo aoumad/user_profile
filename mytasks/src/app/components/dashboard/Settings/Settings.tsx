@@ -3,44 +3,46 @@
 import React from 'react'
 import styles from './Settings.module.css'
 import { UilSetting } from '@iconscout/react-unicons';
+import LogOut from '../LogOut/LogOut';
+import EditProfile from '../EditProfile/EditProfile';
 
 interface SettingsProps {
     isOpen?: boolean;
     onClick?: () => void;
 }
 
-
 const Settings: React.FC<SettingsProps> = ({ isOpen, onClick }) => {
     const [open, setOpen] = React.useState(false);
-    const [otherBarsOpen, setOtherBarsOpen] = React.useState(false);
-
-    const handleMouseEnter = () => {
-        setOpen(true);
-    };
-
-    const handleMouseLeave = () => {
-        setOpen(false);
-    };
 
     const handleClick = () => {
-        if (onClick) {
-        setOtherBarsOpen(!otherBarsOpen);
-        }
+        setOpen(!open);
+        // if (onClick) {
+        //     onClick();
+        // }
     };
 
     return (
         <div
-            className={styles.settings}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onClick={handleClick}
+          className={styles.settings}
+          onClick={handleClick}
         >
-            <div className={styles['settings-container']}>
-                <UilSetting />
-                <span className={styles['setting-span']}> Settings</span>
+          {open && (
+            <div className={styles.OpenedBar}>
+                <div className={styles.otherBar}>
+                    <EditProfile />
+                </div>
+                <div className={styles.otherBar}>
+                    <LogOut />
+                </div>
             </div>
-        </div>
-    );
+          )}
+          {/* <div className={styles['settings-container']}> */}
+           <div className={`${styles['openBar-container']} ${open ? 'open' : ''}`}>
+            <UilSetting />
+            <span className={styles['setting-span']}> Settings</span>
+          </div>
+          </div>
+      );
 };
 
 export default Settings;

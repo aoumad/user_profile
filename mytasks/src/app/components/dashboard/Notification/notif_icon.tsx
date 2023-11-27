@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdNotifications } from "react-icons/io";
-import styles from "./friends.module.css";
+import styles from "./Notification.module.css";
 
 interface NotifIconProps {
   onClick: () => void;

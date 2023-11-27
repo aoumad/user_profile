@@ -9,12 +9,8 @@ const Statistics: React.FC<StatisticsProps> = () => {
   return (
     <div className={styles.statistics}>
       <div className={styles.container}>
-          {/* <div className={styles.chart}> */}
           <StatisticsChart />
-          {/* </div> */}
-          {/* <div className={styles.pie}> */}
             <StatisticsPie />
-          {/* </div> */}
       </div>
     </div>
   );

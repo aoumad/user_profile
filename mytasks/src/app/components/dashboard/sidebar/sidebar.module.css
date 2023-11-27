@@ -60,7 +60,7 @@
   
   .sidebar-container {
     background: linear-gradient(169.75deg, rgba(255, 255, 255, 0) -50.22%, #040924 -9.3%, #111534 -1.17%, rgba(68, 71, 111, 0.957018) 83.26%, rgba(154, 155, 211, 0.9) 136.85%);
-    padding-bottom: 44vh;
+    padding-bottom: 30vh;
   }
   
   .wallet {
@@ -70,7 +70,6 @@
     left: 0vw;
     margin: 30px;
     gap: 0.5rem;
-    padding: 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
