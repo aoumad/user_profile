@@ -18,11 +18,18 @@
     position: absolute;
     justify-content: space-between;
     box-sizing: border-box;
-    height: 90%;
-    width: 85%;
+    height: 50vh;
+    width: 20vw;
     margin: 5px;
     border: 1px solid rgba(154, 155, 211, 0.2);
     border-radius: 10px;
+}
+/* &::-webkit-scrollbar {
+    display: none;
+} */
+
+.friends-container::-webkit-scrollbar {
+    display: none;
 }
 
 div span.friends-title {
@@ -43,7 +50,21 @@ div span.friends-title {
     align-items: center;
     justify-content: space-between;
     width: 94%;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    height: 80px;
+    border-bottom: 1px solid rgba(154, 155, 211, 0.2);
+    margin: 15px 10px;
+    border-radius: 15px;
+}
+
+.friendReqItem
+{
+    background: rgba(154, 155, 211, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
     box-sizing: border-box;
     height: 80px;
     border-bottom: 1px solid rgba(154, 155, 211, 0.2);
@@ -53,14 +74,22 @@ div span.friends-title {
 
 .friend-image
 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 3.4rem;
+    height: 3rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
+.friendReq-image
+{
+    width: 4.6rem;
+    height: 4.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0.2rem;
+}
 .friend-name
 {
     font-family: "Inter", sans-serif;
@@ -73,11 +102,38 @@ div span.friends-title {
     position: absolute;
 }
 
+.friendReq-name
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+    position: sticky;
+    top: 0vh;
+    left: 0vw;
+
+}
+
+.friendReqSent
+{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: aliceblue;
+    position: sticky;
+    /* padding-left: 0.3rem;
+    margin-top: 3.6rem; */
+    top: 11vh;
+    left: 0vw;
+}
+
 .MoreIcon
 {
     color: aliceblue;
-    width: 20px;
-    height: 20px;
+    width: 1.875rem;
+    height: 1.875rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;

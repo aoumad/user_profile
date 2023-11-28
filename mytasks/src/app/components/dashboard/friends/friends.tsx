@@ -1,35 +1,49 @@
+"use client";
+
 import React from 'react';
 import FriendItem from './FriendItem';
-import NotifIcon from '../Notification/Notification';
+import Notification from '../Notification/Notification';
 import styles from './friends.module.css';
+import FriendList from './FriendList';
+import FriendRequests from './FriendRequest';
+
+
 interface Friend {
   id: string;
-    name: string;
-    picture: string;
+  name: string;
+  picture: string;
+}
+
+interface FriendRequest {
+  id: string;
+  name: string;
+  picture: string;
 }
 
 interface FriendsProps {
   friends: Friend[];
+  friendsReq: FriendRequest[];
 }
 
-const Friends: React.FC<FriendsProps> = ({ friends }) => {
+const Friends: React.FC<FriendsProps> = ({ friends, friendsReq }) => {
+  const [showRequest, setRequest] = React.useState(false);
+
+  const handleRequestClick = () => {
+    // Toggle the visibility of the Friends component
+    setRequest((prevShowRequest) => !prevShowRequest);
+  };
+
   return (
     <div className={styles.friends}>
-        <div className={styles['friends-container']}>
-            <span className={styles['friends-title']}>Friends</span>
-            <NotifIcon />
-
-            <ul>
-                {friends.map((friend) => (
-                <FriendItem
-                    key={friend.id}
-                    id={friend.id}
-                    name={friend.name}
-                    picture={friend.picture}
-                />
-                ))}
-            </ul>
-        </div>
+      <div className={styles['friends-container']}>
+        <span className={styles['friends-title']}>Friends</span>
+        <Notification onRequestClick={handleRequestClick} />
+        {showRequest ? (
+          <FriendRequests friendRequests={friendsReq} />
+        ) : (
+          <FriendList friends={friends} />
+        )}
+      </div>
     </div>
   );
 };

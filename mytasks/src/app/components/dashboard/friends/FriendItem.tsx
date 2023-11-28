@@ -13,7 +13,7 @@ const FriendItem: React.FC<FriendItemProps> = (props) => {
         // <div className={styles.FriendItem}>
             <div className={styles['friendItem-container']}>
                 <div className={styles['friend-image']}>
-                    <img src={props.picture} alt="Profile" className="friend-image" />
+                    <img src={props.picture} alt="Profile" className="rounded-full" />
                 </div>
                 <div className={styles['friend-name']}>
                     <span className={styles['friend-name']}>{props.name}</span>

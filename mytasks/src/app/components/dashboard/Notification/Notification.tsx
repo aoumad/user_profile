@@ -18,27 +18,35 @@ const friendsList = [
     // Add more friends as needed
   ];
 
-  const Notification: React.FC = () => {
+
+  interface NotificationProps {
+    onRequestClick: () => void;
+  }
+  
+  const Notification: React.FC<NotificationProps> = ({ onRequestClick }) => {
     const [notif, setNotif] = React.useState('');
     const [showFriends, setShowFriends] = React.useState(false);
 
     const handleNotifChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setNotif(event.target.value);
+        // setNotif(event.target.value);
+        onRequestClick();
     };
 
     const handleNotifIconClick = () => {
         // Toggle the visibility of the Friends component
         setShowFriends((prevShowFriends) => !prevShowFriends);
+        // console.log('showFriends:', showFriends);
     };
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
     };
-
     return (
-        <div className={styles.notification} onChange={handleNotifChange}>
-            <NotifIcon onClick={handleNotifIconClick} />
-            {showFriends && <Friends friends={friendsList} />}
+        // <div className={styles.notification} onChange={handleNotifChange}>
+        //     <NotifIcon onClick={onRequestClick} />
+        <div className={styles.notification}>
+        <NotifIcon onClick={handleNotifChange}  />
+            {/* {showFriends && <Friends friends={friendsList} />} */}
         </div>
     );
 };
