@@ -4,15 +4,16 @@ import FriendItem from './FriendItem';
 
 interface Friend {
     id: string;
-      name: string;
-      picture: string;
+    name: string;
+    picture: string;
   }
   
   interface FriendsProps {
     friends: Friend[];
+    onFriendItemClick: (id: string) => void;
   }
 
-const FriendList: React.FC<FriendsProps> = ({ friends }) => {
+const FriendList: React.FC<FriendsProps> = ({ friends , onFriendItemClick}) => {
   return (
     <div className={styles['friends-list']}>
     <ul>
@@ -22,6 +23,7 @@ const FriendList: React.FC<FriendsProps> = ({ friends }) => {
             id={friend.id}
             name={friend.name}
             picture={friend.picture}
+            onFriendItemClick={() => onFriendItemClick(friend.id)}
         />
         ))}
     </ul>

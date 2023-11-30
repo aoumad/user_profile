@@ -45,9 +45,9 @@ const FriendRequests = [
       <div className="AppGlass">
           <Sidebar/>
           <Skins/>
-          <Friends friends={friendsList} friendsReq={FriendRequests} />
           <Achievement />
           <Statistics />
+          <Friends friends={friendsList} friendsReq={FriendRequests} />
       </div>
     </div>
         {children}
