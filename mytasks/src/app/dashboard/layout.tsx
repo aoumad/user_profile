@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { useState, useEffect } from 'react'
 import { Inter } from 'next/font/google'
 import './global.module.css'
 import Sidebar from '../components/dashboard/sidebar/sidebar'
@@ -47,7 +48,7 @@ const FriendRequests = [
           <Skins/>
           <Achievement />
           <Statistics />
-          <Friends friends={friendsList} friendsReq={FriendRequests} />
+          <Friends friends={friendsList} friendsReq={FriendRequests}/>
       </div>
     </div>
         {children}

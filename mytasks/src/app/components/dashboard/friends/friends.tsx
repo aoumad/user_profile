@@ -56,14 +56,14 @@ const Friends: React.FC<FriendsProps> = ({ friends, friendsReq, onFriendItemClic
   useEffect(() => {
     if (showInfo)
     {
-      setBlur({
-        "filter": "blur(6px)",
-        // "-webkit-filter": "blur(6px)",
-        "pointer-events": "none"
-      })
+      // make the activeBlur true
+      setBlur({filter: 'blur(10px)'});
     }
     else
+    {
+      // make the activeBlur false
       setBlur({});
+    }
   }, []);
 
   useEffect(() => {
