@@ -1,6 +1,6 @@
 import React from 'react';
-import StatisticsChart from '../dashboard/StatisticsChart/StatisticsChart';
-import StatisticsPie from '../dashboard/StatisticsPie/StatisticsPie';
+import StatisticsChart from '../../dashboard/StatisticsChart/StatisticsChart';
+import StatisticsPie from '../../dashboard/StatisticsPie/StatisticsPie';
 import styles from './Statistics.module.css';
 
 interface StatisticsProps {}

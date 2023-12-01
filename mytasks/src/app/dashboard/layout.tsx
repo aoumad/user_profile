@@ -24,7 +24,6 @@ export default async function RootLayout({
     { id: "6", name: "Friend 6", picture: aoumad.src },
     { id: "7", name: "Friend 7", picture: aoumad.src },
     { id: "8", name: "Friend 8", picture: aoumad.src },
-    // Add more friends as needed
   ];
 
 
@@ -37,7 +36,6 @@ const FriendRequests = [
     { id: "6", name: "Friend 6", picture: yamon.src },
     { id: "7", name: "Friend 7", picture: yamon.src },
     { id: "8", name: "Friend 8", picture: yamon.src },
-    // Add more friends as needed
   ];
 
   return (
