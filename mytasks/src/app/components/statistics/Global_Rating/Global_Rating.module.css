@@ -105,3 +105,11 @@
     text-align: left;
     margin-left: 8vw;
 }
+
+.global-rating-icon
+{
+    position: absolute;
+    left: 18vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
