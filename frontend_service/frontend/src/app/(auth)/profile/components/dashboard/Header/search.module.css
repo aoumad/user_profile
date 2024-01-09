@@ -27,3 +27,11 @@
         width: 20rem;
     }
 }
+
+@media (max-width: 550px)
+{
+  .addChannelModaloumad
+  {
+      width: 15rem;
+  }
+}

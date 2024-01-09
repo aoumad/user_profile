@@ -10,10 +10,12 @@ interface SkinProps {
 
 const SkinComp: React.FC<SkinProps> = ({ svgImage, skinName, WalletValue }) => {
   return (
-    <div className={styles.SkinComp}>
+    <div className={styles.rotateanimation}>
+        <div className={styles.SkinComp}>
         <img src={svgImage.src} alt={skinName} />
         <span className={styles['skin-name']}>{skinName}</span>
         <span className={styles['wallet-value']}>{WalletValue}</span>
+      </div>
     </div>
   );
 };

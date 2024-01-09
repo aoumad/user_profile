@@ -14,13 +14,15 @@ export default async function RootLayout({
       <>
       <div className={styles['skins']}>
         <div className={styles['skins-container']}>
+          <div className={styles['skins-topBar']}>
+          <SearchBar />
+          {/* <StatusBar Table={<Table />} Paddle={<Paddle />} Ball={<Ball />} */}
+          <StatusBar Table={<Table />} />
           <div className={styles.wallet}>
               <FaGoogleWallet />
               <span className={styles['wallet-value']}>215</span>
           </div>
-          <SearchBar />
-          {/* <StatusBar Table={<Table />} Paddle={<Paddle />} Ball={<Ball />} */}
-          <StatusBar Table={<Table />} />
+          </div>
         </div>
       </div>
           {children}

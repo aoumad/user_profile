@@ -43,6 +43,16 @@ const SidebarRoot = styled.div`
     top: 5vh;
     transition: all 300ms ease;
   }
+
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    transition: all 300ms ease;
+    width: 85%;
+    height: 40%;
+  }
   `;
   
   const SidebarContainer = styled.div`

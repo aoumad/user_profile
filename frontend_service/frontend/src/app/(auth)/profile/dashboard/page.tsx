@@ -65,6 +65,14 @@ const AppGlass = styled.div`
     grid-template-rows: 15rem 11rem auto;
     z-index: auto;
   }
+  @media screen and (max-width: 450px)
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 
 
