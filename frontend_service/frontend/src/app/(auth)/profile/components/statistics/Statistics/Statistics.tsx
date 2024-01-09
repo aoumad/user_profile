@@ -9,8 +9,8 @@ const Statistics: React.FC<StatisticsProps> = () => {
   return (
     <div className={styles.statistics}>
       <div className={styles.container}>
+          <StatisticsPie />
           <StatisticsChart />
-            <StatisticsPie />
       </div>
     </div>
   );

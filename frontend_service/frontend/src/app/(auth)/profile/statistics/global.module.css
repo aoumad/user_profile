@@ -1,13 +1,14 @@
 .statistics
 {
-    background: rgba(5, 10, 39, 1);
-    height: 100vh;
-    display: flex;
+  background: rgba(5, 10, 39, 1);
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .left-panel {
-    flex: 0 0 65vw; /* Set width to 65% of viewport width */
-    /* margin: 5rem 0 0 0; */
+    flex: 0 65vw; /* Set width to 65% of viewport width */
+    place-self: flex-start;
   }
   
   .right-panel {

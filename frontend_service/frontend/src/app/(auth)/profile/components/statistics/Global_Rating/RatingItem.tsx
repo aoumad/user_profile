@@ -19,8 +19,10 @@ const RatingItem: React.FC<Rating> = ({id, player_profile, player_name, player_t
         <div className={styles['player-profile']}>
             <img src={player_profile} alt="Profile" className={styles['rounded-lg']} />
         </div>
-            <span className={styles['player-name']}>{player_name}</span>
-            <span className={styles['player-title']}>{player_title}</span>
+            <div className={styles['username-container']}>
+                <span className={styles['player-name']}>{player_name}</span>
+                <span className={styles['player-title']}>{player_title}</span>
+            </div>
         <span className={styles['player-rating']}>{rating}</span>
     </div>
   )
