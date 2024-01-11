@@ -20,7 +20,7 @@ const Global_Rating: React.FC<RatingListProps> = ({ratings}) => {
     <div className={styles['global-rating']}>
         <div className={styles['global-rating-title']}>
             <span>Global Rating</span>
-            <GiSettingsKnobs className={styles['global-rating-icon']}/>
+            {/* <GiSettingsKnobs className={styles['global-rating-icon']}/> */}
         </div>
         <Global_RatingList ratings={ratings} />
     </div>
